@@ -18,7 +18,7 @@ def info_take(filename,cols=None):
 	for s in filename.sheets():
 		for row in range(1,s.nrows):
 			for col in range(len(cols)):
-				searchlist.write(s.cell(row,cols[col]).value + ' hdfc ' + 'linkedin')
+				searchlist.write(s.cell(row,cols[col]).value) #Add more niche for better performance.
 			searchlist.write('\n')	
 
 	return searchlist
